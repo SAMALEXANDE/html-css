@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <!-- <section>
+        <div class=":myhml">
+            <h1>its my world iam the king</h1>
+        </div>
+        <div style="border:solid; border-radius:50% ;height:100px; width:100px; background-color :lightseagreen;" >
+            <h1 style="text-align:center; margin-top:35"> king</h1>
+        </div>
+        
+    </section> -->
+
+    <div class="first">
+        <p id="hours" style="border:solid; border-radius: 50%;  height: 100px; width: 100px; 
+        background-color:antiquewhite;text-align: center;  margin-left: 800px;"></p>
+    </div>
+
+    <div class="second">
+        <p id="minutes" style=" border:solid; border-radius: 50%;  height: 100px; width: 100px; 
+        background-color:rgb(109, 122, 112);text-align: center;margin-left: 800px ;"></p>
+    </div>
+    
+    <script>
+        const time = new Date();
+        
+        let istHours = time.getHours()
+        let istMinutes = time.getMinutes()
+
+        let utcHours = time.getUTCHours()
+        let utcMinutes = time.getUTCMinutes()
+
+        hrsDiff = istHours -utcHours 
+        minDiff = istMinutes-utcMinutes
+
+        document.getElementById("hours").innerHTML=hrsDiff
+        document.getElementById("minutes").innerHTML=minDiff
+
+    </script>
+
+</body>
+
+</html>
